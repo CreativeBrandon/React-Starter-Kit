@@ -1,0 +1,33 @@
+{
+  "name": "react-typescript-starter",
+  "version": "1.0.0",
+  "description": "React Typescript with Webpack Starter kit",
+  "main": "./dist/bundle.js",
+  "scripts": {
+    "start": "webpack-dev-server --inline --progress --port 8080",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && webpack --config config/webpack.prod.js",
+    "postinstall": "typings install"
+  },
+  "keywords": [
+    "React",
+    "Typescript",
+    "Webpack"
+  ],
+  "author": "Cre8tiveBreed",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
+  },
+  "devDependencies": {
+    "rimraf": "^2.5.4",
+    "source-map-loader": "^0.1.5",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.14.1"
+  }
+}
